@@ -1,0 +1,38 @@
+Write a program to generate below pattern. (normal)
+
+1
+12
+123
+1234
+12345
+
+
+5
+45
+345
+2345
+12345
+
+Sol:
+def straight():
+  num=int(input("Enter your number :"))
+  n=int(input("Enter how many lines to print: "))
+  a=num
+  for i in range(0,n):
+    print(num,"\n")
+    a +=1
+    num=str(num)+str(a)
+
+def reverse():
+  print("Reverse order")
+  num=int(input("Enter your number :"))
+  n=int(input("Enter how many lines to print: "))
+  a=num
+  for i in range(0,n):
+    print(num,"\n")
+    a -=1
+    num=str(a)+str(num)  
+    
+    
+straight()
+reverse()
