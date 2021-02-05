@@ -1,0 +1,13 @@
+Write a program to sum a list of numbers using funtional approach.
+
+def sum(x,y):
+  if y-1==0:
+    return x
+  else:
+    return (x + sum(next(itr1),(y-1)))
+      
+  
+numbers = list(map(int, input("Enter your numbers :").split()))
+itr=len(numbers)
+itr1=iter(numbers)
+sum(next(itr1),itr)
